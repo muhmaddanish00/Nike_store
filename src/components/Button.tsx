@@ -1,17 +1,18 @@
-import React from 'react'
+import React, { FC } from 'react';
 
-const Button = ({text,bg,border,hover}:any) => {
-    return (
-      
-
-<button className={`${bg} ${border} px-1 rounded-sm hover:bg-red-600 border border-gray-600  transition transform`}>{text}</button>
-      
-
-
-
-    )
+interface ButtonProps {
+  text: string;
+  bg: string; // class name like 'bg-blue-500'
 }
 
-export default Button
+const Button: FC<ButtonProps> = ({ text, bg }) => {
+  return (
+    <button
+      className={`${bg} px-1 rounded-sm hover:bg-red-600 border border-gray-600 transition transform`}
+    >
+      {text}
+    </button>
+  );
+};
 
-Button
+export default Button;

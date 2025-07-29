@@ -16,7 +16,7 @@ const Hero = () => {
                         <div className='space-x-12 mt-4'>
 
                         <Button text='Shop Now' bg='bg-red-500'/>
-                        <Button text='Category' />
+                        <Button text='Category' bg='bg-gray-50' />
                         </div>
                             <p className='text-sm font-light mt-2'>Also Available On</p>
                         <div className='flex space-x-2 mt-2'>
